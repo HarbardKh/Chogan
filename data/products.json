@@ -1,0 +1,139 @@
+{
+  "products": [
+    {
+      "id": "018",
+      "price": 35,
+      "gender": "H",
+      "volume": "70 ml",
+      "name": "Parfum Chogan 018",
+      "pyramideOlfactive": {
+        "head": ["Armoise", "Bergamote", "Bigarade", "Bouleau", "Carvi", "Coriandre", "Mandarine", "Néroli"],
+        "heart": ["Cannelle", "Cardamome", "Genévrier", "Gingembre", "Iris", "Jasmin", "Poivre", "Racine d'iris"],
+        "base": ["Ambre", "Cèdre", "Cuir", "Mousse de chêne", "Thé", "Vétiver"]
+      },
+      "description": "Le parfum pour l'homme qui dit des mots qui comptent, sûr de ses choix et de ses sentiments ; une essence pleine d'émotions, inoubliable au charme unique."
+    },
+    {
+      "id": "016",
+      "price": 35,
+      "gender": "H",
+      "volume": "70ml + 15ml",
+      "name": "Parfum Chogan 016",
+      "pyramideOlfactive": {
+        "head": ["Armoise", "Bergamote", "Cardamome", "Lavande", "Menthe"],
+        "heart": ["Cannelle", "Carvi", "Fleur d'oranger"],
+        "base": ["Ambre", "Bois de santal", "Cèdre", "Fève tonka", "Vanille"]
+      },
+      "description": "L'équilibre parfait entre virilité et sensualité. Un classique réinventé grâce à l'association de la lavande et de notes vanillées sexy. C'est un parfum magnétique et séduisant, unique, moderne, doux, construit sur des contrastes et absolument irrésistible.",
+      "bonus": "Pour chaque parfum de 70 ml acheté, tu reçois gratuitement une recharge de parfum de 15 ml de la même fragrance."
+    },
+    {
+      "id": "038",
+      "price": 35,
+      "gender": "H",
+      "volume": "70ml + 15ml",
+      "name": "Parfum Chogan 038",
+      "pyramideOlfactive": {
+        "head": ["Citron", "Menthe", "Pamplemousse", "Poivre rose"],
+        "heart": ["Gingembre", "Iso E Super", "Jasmin", "Noix de muscade"],
+        "base": ["Bois de santal", "Cèdre", "Ciste", "Encens", "Musc", "Patchouli", "Vétiver"]
+      },
+      "description": "C'est le parfum d'un homme qui refuse de se conformer à des modèles préétablis et qui s'affranchit de toutes les conventions. Sa composition révèle un esprit masculin qui décide de son propre destin avec indépendance et détermination. Une personnalité forte et inattendue.",
+      "bonus": "Pour chaque parfum de 70 ml acheté, tu reçois gratuitement une recharge de parfum de 15 ml de la même fragrance."
+    },
+    {
+      "id": "037",
+      "price": 30,
+      "gender": "H",
+      "volume": "100ml",
+      "name": "Parfum Chogan 037",
+      "pyramideOlfactive": {
+        "head": ["Bergamote", "Feuille de violette", "Lotus", "Poire"],
+        "heart": ["Ambre", "Bois de cachemire", "Bois de santal", "Huile essentielle de cypriol", "Notes boisées", "Vétiver"],
+        "base": ["Benjoin", "Fève tonka", "Miel", "Musc"]
+      },
+      "description": "Un parfum qui redéfinit l'univers olfactif masculin. C'est le parfum d'un homme sophistiqué, déterminé et en même temps créatif. Les notes fraîches et pétillantes du parfum modernisent et personnalisent l'homme qui le porte."
+    },
+    {
+      "id": "3205",
+      "price": 18,
+      "gender": "H",
+      "volume": "30ml",
+      "name": "Parfum Chogan 3205",
+      "pyramideOlfactive": {
+        "head": ["Basilic", "Lavande", "Menthe", "Pamplemousse", "Pomme"],
+        "heart": ["Géranium", "Jasmin", "Sauge", "Œillet"],
+        "base": ["Bois de cedrat", "Patchouli", "Sapin"]
+      },
+      "description": "Les essences fruitées de pommes fraîches et d'agrumes dans les notes de tête soulignent parfaitement la personnalité unique de chaque homme. La sensualité est renforcée par les accords de clou de girofle, jasmin et géranium et intensifié dans le fond par les notes de Sapin, bois de Cèdre et Patchouli."
+    },
+    {
+      "id": "056",
+      "price": 35,
+      "gender": "F",
+      "volume": "70ml + 15ml",
+      "name": "Parfum Chogan 056",
+      "pyramideOlfactive": {
+        "head": ["Mandarine", "Safran", "Thym"],
+        "heart": ["Lys", "Orchidée", "Ylang-ylang"],
+        "base": ["Fève tonka", "Mousse de chêne", "Palissandre du Brésil", "Vanille"]
+      },
+      "description": "Il révèle de nouvelles sensations, séduisant par son mystère et sa polyvalence, symbole d'un scandale intemporel. Une forte composition orientale charismatique se prête à une femme innocente et sensuelle à la fois.",
+      "bonus": "Pour chaque parfum de 70 ml acheté, tu reçois gratuitement une recharge de parfum de 15 ml de la même fragrance."
+    },
+    {
+      "id": "055",
+      "price": 35,
+      "gender": "F",
+      "volume": "70ml + 15ml",
+      "name": "Parfum Chogan 055",
+      "pyramideOlfactive": {
+        "head": ["Fleur d'oranger", "Poire", "Poivre rose"],
+        "heart": ["Amande", "Café", "Jasmin", "Réglisse"],
+        "base": ["Bois de cachemire", "Cèdre", "Patchouli", "Vanille"]
+      },
+      "description": "Un parfum inspiré par une femme unique et déterminée, sûre d'elle, libre, glamour, constamment à la recherche de nouvelles émotions. Un parfum adrénaline, noir comme le café, capable de créer une dépendance avec l'exquise féminité des fleurs blanches et de la vanille.",
+      "bonus": "Pour chaque parfum de 70 ml acheté, tu reçois gratuitement une recharge de parfum de 15 ml de la même fragrance."
+    },
+    {
+      "id": "049",
+      "price": 35,
+      "gender": "F",
+      "volume": "70ml + 15ml",
+      "name": "Parfum Chogan 049",
+      "pyramideOlfactive": {
+        "head": ["Fleur de papayer", "Néroli"],
+        "heart": ["Amaryllis", "Narcissus", "Nénuphar"],
+        "base": ["Bois de cachemire", "Musc"]
+      },
+      "description": "Frais et féminin, comme les fleurs blanches de la Sicile. Ce parfum a l'odeur des plus beaux souvenirs : un amour innocent, frais et pur, destiné à rester jeune pour toujours. En même temps, c'est un parfum absolument contemporain : il a été créé en combinant des essences jamais utilisées auparavant, plus traditionnelles.",
+      "bonus": "Pour chaque parfum de 70 ml acheté, tu reçois gratuitement une recharge de parfum de 15 ml de la même fragrance."
+    },
+    {
+      "id": "047",
+      "price": 30,
+      "gender": "F",
+      "volume": "100ml",
+      "name": "Parfum Chogan 047",
+      "pyramideOlfactive": {
+        "head": ["Cardamome", "Gingembre", "Poivre"],
+        "heart": ["Fleur d'oranger", "Gardénia", "Noix de Coco", "Pivoine"],
+        "base": ["Ambre", "Bois de santal", "Musc"]
+      },
+      "description": "Somptueux mais excentrique, glamour mais ironique, ce parfum est dédié à la femme qui sait être sexy et sûre d'elle, qui marche la tête haute. Un parfum inspiré par la somptuosité des robes du soir."
+    },
+    {
+      "id": "353",
+      "price": 18,
+      "gender": "F",
+      "volume": "30ml",
+      "name": "Parfum Chogan 353",
+      "pyramideOlfactive": {
+        "head": ["Gardénia", "Rose bulgare"],
+        "heart": ["Musc"],
+        "base": ["Bois de cedrat", "Vétiver"]
+      },
+      "description": "Un parfum qui révèle le mystère de l'attraction. Un parfum captivant, avec des notes florales, se combine avec un cœur sensuel de Musc Ambre et rencontre l'élégance naturelle des bois. Son parfum évoque la sensualité de la peau d'une femme."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+🧩 EVOLUTION PREVUE VERSIONS 
+Ce document détaille les versions de développement successives du projet, de MVP à V2. Chaque version contient les fonctionnalités cibles, les objectifs précis et la logique de déploiement.
+________________________________________
+✅ MVP – Version minimale exploitable Objectif : Avoir une vitrine fonctionnelle capable de générer une 1ère vente
+•	30 produits intégrés manuellement via PayloadCMS ou base JSON
+•	Intégration Smart Order dans tous les produits + système de redirection optimisée
+•	Pages : Home / Catalogue / Produit / Commande (formulaire)
+•	Tunnel Smart Order fonctionnel : formulaire → lien de finalisation
+•	Intégration visuelle simple et mobile responsive
+•	Meta SEO basique (GPT ou manuel)
+•	Tracking simple (Umami ou Plausible)
+•	Newsletter manuelle avec collecte email (formulaire simple, stockage Supabase)
+•	Hébergement sur Vercel (frontend) + Render (backend)
+________________________________________
+🔁 V1 – Version Boutique Active Objectif : Boutique plus complète, premières automatisations et base solide SEO
+•	Passage à PayloadCMS en admin full (produits, articles, avis)
+•	Blog actif : 3 à 5 articles minimum optimisés SEO
+•	Génération GPT pour descriptions produits + metas + FAQ auto
+•	Intégration avis clients (faux ou vrais premiers)
+•	Segmentation email basique (collecte via 1 formulaires type parfum et fragrances préféré)
+•	Système bundle statique (offre livraison / article offert si panier > seuil)
+________________________________________
+⚙️ V1.2 – Version enrichie & structurée Objectif : Automatiser + dashboard stats + emailing actif
+•	Dashboard admin simple : commandes générées, leads, trafic
+•	Scripts semi-auto : ajout produit (scraping + GPT)
+•	Email J+3 auto : relance / recommandation produit / parrainage
+•	Certains Articles partiellement bloqués : email requis
+•	Début tracking Smart Order (UTM ou redirection analysée)
+•	Déploiement Mailgun + mailing segmenté
+________________________________________
+🚀 V1.5 – Optimisation UX & Bundles dynamiques Objectif : Convertir + Fidéliser
+•	Recommandations dynamiques produits (selon panier ou visite)
+•	Bundles dynamiques avec déclenchement livraison/gift
+•	Tracking comportement utilisateurs
+•	Favoris / wishlist client (stockés localement ou dans CMS)
+•	Testeurs VIP (formulaire + base email/tag)
+________________________________________
+📱 V1.8 – Espace Client & Fidélisation Objectif : Création de relation continue avec les acheteurs
+•	Création compte client (email/pass ou lien magique)
+•	Historique de commandes (même partiel / basé sur Smart Orders envoyés)
+•	Personnalisation espace selon profil parfum / préférences
+•	Onboarding client (quizz parfum, tags automatiques)
+•	Mailing scénarisé selon comportement / historique
+________________________________________
+🏁 V2 – Boutique complète & scalable Objectif : Auto-maintenable, performante, prête à scaler
+•	Automatisation complète du scraping > GPT > fiche produit > blog associé
+•	UGC intégré (avis + visuels)
+•	PWA finalisée + UX mobile enrichie
+•	Espaces ambassadeurs + programmes gamifiés
+•	Dashboard analytics évolué (interne ou Matomo/GA custom)
+•	Contenu restreint premium (testeurs, ambassadeurs, newsletter VIP)
+•	Référencement SEO stable + netlinking
+________________________________________
+👉 Chaque version est un palier clair. On peut construire un Trello ou Notion basé sur ce découpage.
+Dispo pour construire les tâches de la version actuelle (MVP) quand tu veux.
+

@@ -1,0 +1,102 @@
+🚀 PLAN DE DEV "FROM SCRATCH" V1 Objectif : Créer une boutique front ultra-légère, scalable, reliée en backend à un espace affilié (maison mère), qui gère les paiements/livraisons, un suivi des commandes, une stratégie de leadgen/emailing, des automatisations de contenu, et une forte présence SEO via un blog intelligent.
+🟢 PHASE 1 — STRUCTURE DE BASE ET MVP FONCTIONNEL
+1.	STACK TECHNIQUE
+•	Frontend : Astro / Next.js / Nuxt (au choix selon préférence)
+•	Backend : Express / Fastify (API commandes + emailing + proxy)
+•	Scraping : Puppeteer / Windsurf / Axios+Cheerio (selon besoin)
+•	Base de données : Supabase (ou MongoDB si usage Payload direct)
+•	Emailing SMTP : Mailgun / Sendgrid
+•	CMS Headless : Payload CMS (pour articles, fiches produits, avis, leads)
+•	Déploiement : Vercel (front), Railway ou Render (backend + CMS)
+2.	STRUCTURE UI/UX ESSENTIELLE
+•	Homepage : Hero image, USP claires, CTA vers catalogue
+•	Page catalogue : listing produits via base de données (Payload CMS)
+•	Page produit : image, description, prix, bouton commander
+•	Panier local : prévisualisation commande, bouton "payer"
+•	Redirection (ou iframe) vers panier/pré-paiement maison mère
+3.	SCRAPING INITIAL
+•	Scraping ponctuel (non récurrent) de produits depuis le site maison mère
+•	Stockage en base de données (Payload CMS ou Supabase)
+•	Traitement semi-automatisé : analyse contenu scrappé + reformulation/enrichissement via GPT
+•	Intégration produit par produit dans la base, avec vérification humaine
+•	Démarrage avec ~30 parfums publiés au lancement
+•	Ajout progressif de nouveaux produits chaque semaine pour alimenter la dynamique de nouveauté
+4.	SYSTÈME DE COMMANDE
+•	Route API /commander qui :
+o	Reçoit les infos client (nom, mail, adresse)
+o	Utilise un système de Smart Order (commande intelligente via l’espace consultant Chogan)
+	Ajoute les produits au panier
+	Remplit les infos client
+	Génère un lien de finalisation officiel Chogan
+o	Retourne l'URL de paiement officielle
+•	Redirection automatique du client vers cette page de finalisation/paiement (hébergée chez Chogan)
+🟡 PHASE 2 — AUTOMATISATION CONTENU & COLLECTE CLIENTS
+5.	CONTENU AUTO PAR GPT (en local ou via API)
+•	Descriptions produits enrichies à partir du contenu scrapé + méta personnalisée
+•	Titres SEO + FAQ catégories
+•	Articles de blog modèles liés aux nouvelles sorties produits (parfum de la semaine, nouveautés tendance...)
+•	Maillage interne intelligent entre articles, produits, catégories
+•	Articles partiellement restreints : contenu bloqué par inscription email
+6.	EMAILING & LEADGEN
+•	Captation email dans formulaire "commander", pop-up ou articles restreints
+•	Sauvegarde email (et nom) dans Supabase ou Payload CMS
+•	Envoi de confirmation de commande via SMTP
+•	Envoi manuel ou auto de newsletter (Mailerlite, Mailgun, etc.)
+7.	TRACKING & RGPD
+•	Analytics RGPD : Umami ou Plausible
+•	Intégration CookieConsent.js ou bann custom RGPD
+•	Tracking actions (CTA, clic commande, panier abandon)
+🔵 PHASE 3 — EXPANSION & CONTENU SEO
+8.	OPTIMISATION CATALOGUE ET OFFRES
+•	Adaptation des produits, offres ou descriptions en fonction du trafic et de la demande
+•	Mise en avant de catégories thématiques (cadeaux, saisons, tendances)
+•	Pages d’atterrissage spécifiques selon audience (parfum homme/femme, inspiration marques...)
+9.	AVIS CLIENTS
+•	Système d’avis (faux initialement via GPT ou JSON statique)
+•	Formulaire de collecte + stockage Supabase ou Payload CMS
+•	Réutilisation avis dans listing produit
+10.	BLOG + SEO
+•	Blog dynamique via Payload CMS
+•	TOC auto, filtres par tag, pagination
+•	Intégration CTA mailing dans articles
+•	Système de contenu partiellement bloqué (inscription mail requise)
+•	Stratégie de maillage SEO dynamique avec GPT (réseau d’articles connectés)
+•	Articles réguliers liés aux nouvelles références ajoutées (avec génération semi-auto)
+🔴 PHASE 4 — FINALISATION & UX MOBILE
+11.	PWA LÉGÈRE (OPTIONNEL)
+•	manifest.json + service worker pour offline + installable
+•	Icônes, couleurs, UX mobile enrichie
+12.	MONITORING
+•	UptimeRobot ou Healthcheck.io
+•	Log erreurs backend + alerte Telegram ou Discord webhook
+🔍 PHASE 5 — ESPACE CLIENT & FIDÉLISATION
+13.	CRÉATION DE COMPTE CLIENT (facultatif V1, prévu pour V2+)
+•	Authentification via email + mot de passe, ou lien magique
+•	Sauvegarde des informations client dans Payload CMS ou Supabase
+•	Historique de commandes (via redirection ou copie backend)
+•	Fonction favoris / wishlist / alertes nouveautés
+14.	EXPÉRIENCE PERSONNALISÉE
+•	Recommandations personnalisées selon achats ou profils
+•	Segmentation pour emailing ciblé
+•	Accès prioritaire à certains contenus ou produits
+
+🧩 PHASE 6 — DEV FUTUR (ÉVOLUTIONS PROGRESSIVES & SCALE-UP)
+15.	MALLETTE TESTEURS / DIFFUSION TERRAIN
+•	Préparation de kits physiques personnalisés (parfum, soin, produit ménager)
+•	Flyers QR code personnalisés redirigeant vers Smart Orders taggués
+•	Système de suivi dans Payload CMS (origine commande / testeur)
+•	Organisation de tournées test (box voyageuse, relais familial)
+16.	AUTOMATISATION & TRACKING SMART ORDER
+•	Génération dynamique des liens Smart Order avec tags UTM
+•	Suivi des conversions, taux de clic, abandons panier
+•	Intégration d’un tableau de bord analytics personnalisé
+17.	OUTILS DE DEV & STRUCTURE PRO
+•	GitHub + branches (main/dev), Prettier/ESLint, Husky
+•	Roadmap Notion ou Trello
+•	Pipeline CI/CD simple (Vercel + Render auto-déployés)
+18.	PROGRAMME DE FIDÉLISATION COMMUNAUTAIRE
+•	Contenu premium, articles privés, bonus pour commandes récurrentes
+•	Ambassadeurs locaux / relais humains (ex : membres famille)
+•	Mini gamification (badges, “testeur VIP”) à intégrer dans Payload CMS
+📊 OBJECTIF FINAL Une boutique autonome, rapide, SEO friendly, reliée à une maison mère pour les paiements/livraisons, avec collecte mail, automatisations de contenu, système de blog avancé via Payload CMS avec contenu restreint, stratégie de publication évolutive reposant sur une base solide de produits, un flux régulier de nouveautés et d'articles associés, et un espace client prêt pour la fidélisation long terme.
+

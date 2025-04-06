@@ -1,0 +1,101 @@
+🎯 PLAN DE DÉVELOPPEMENT MVP
+
+📋 OBJECTIF
+Créer une vitrine e-commerce minimaliste mais professionnelle, 
+capable de générer une première vente via le système Smart Order de Chogan.
+
+🛠 STACK TECHNIQUE CHOISIE
+• Frontend : Next.js (pour SEO + routing simple + SSR)
+• Backend : Express.js (léger, rapide à setup)
+• Base de données : JSON statique V1 (migration PayloadCMS prévue en V1)
+• Hébergement : Vercel (front) + Render (backend)
+• Analytics : Umami (RGPD friendly)
+
+📦 STRUCTURE DU PROJET
+/frontend (Next.js)
+  /pages
+    /index.js (Home)
+    /catalogue.js
+    /produit/[id].js
+    /commander.js
+  /components
+    /layout
+    /product
+    /cart
+  /data
+    products.json
+  /public
+    /images
+    /icons
+
+/backend (Express)
+  /routes
+    smartOrder.js
+  /services
+    orderService.js
+  /utils
+    validation.js
+
+🔄 ÉTAPES DE DÉVELOPPEMENT
+
+1. SETUP INITIAL 
+   • Création repos Git
+   • Setup Next.js + dépendances
+   • Setup Express.js minimal
+   • Configuration déploiement Vercel/Render
+   • Setup Umami analytics
+
+2. BASE DE DONNÉES PRODUITS
+   • Création script de scraping simple (Axios + Cheerio)
+   • Extraction automatique depuis les URLs produits :
+     - Titres, prix, descriptions
+     - Images produits
+     - Références Smart Order
+   • Nettoyage et formatage des données
+   • Stockage en JSON structuré
+   • Vérification/ajustement manuel des données importées
+
+3. FRONTEND - PAGES ESSENTIELLES
+   • Layout général responsive
+   • Page Home (hero + featured products)
+   • Catalogue (grid + filtres basiques)
+   • Page produit détaillée
+   • Formulaire de commande
+
+4. BACKEND - SMART ORDER
+   • API route commande
+   • Validation formulaire
+   • Génération lien Smart Order
+   • Redirection sécurisée
+   • Tests end-to-end
+
+5. INTÉGRATION & OPTIMISATIONS 
+   • SEO basique (meta, sitemap)
+   • Formulaire newsletter + Supabase
+   • Tests performances
+   • Optimisation images
+   • Mobile responsive finalization
+
+6. DÉPLOIEMENT & TESTS 
+   • Déploiement production
+   • Tests cross-browser
+   • Monitoring setup
+   • Documentation basique
+   • Tests réels commandes
+
+⏱ ESTIMATION TOTALE :
+
+🎯 CRITÈRES DE SUCCÈS MVP
+• Site responsive et rapide (>90 Lighthouse)
+• Parcours commande fonctionnel
+• 30 produits bien présentés
+• Formulaire newsletter opérationnel
+• Tracking visiteurs en place
+• Première commande test réussie
+
+📝 NOTES IMPORTANTES
+• Privilégier la simplicité et la fiabilité
+• Focus sur l'expérience mobile
+• Tester chaque étape du tunnel de commande
+• Documenter les points critiques pour V1
+• Préparer la structure pour les futures évolutions
